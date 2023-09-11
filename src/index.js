@@ -1,7 +1,6 @@
+import { createChildElement } from "./utility/utility";
 import homepage from "./homepage/homepage";
 
-const contentElement = document.createElement("div");
+const contentElement = createChildElement("div", document);
 contentElement.id = "content";
 contentElement.appendChild(homepage);
-
-document.body.appendChild(contentElement);
