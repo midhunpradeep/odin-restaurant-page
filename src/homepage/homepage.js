@@ -5,12 +5,6 @@ import Image from "./patrick-tomasso-GXXYkSwndP4-unsplash.jpg";
 
 const homepage = document.createElement("div");
 
-const heading = createChildElement("h1", homepage);
-heading.textContent = "Culinary Delights";
-
-const subtitle = createChildElement("h2", homepage);
-subtitle.textContent = "Where exquisite flavors meet warm hospitality.";
-
 const image = createChildElement("img", homepage);
 image.src = Image;
 
