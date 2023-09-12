@@ -21,6 +21,7 @@ aboutMenuParagraph.textContent =
   " something to satisfy your cravings.";
 
 const menuContainer = createChildElement("div", menuPage);
+menuContainer.classList.add("menu-container");
 
 function generateMenuSection(heading, contents) {
   const sectionFigureElement = document.createElement("figure");
