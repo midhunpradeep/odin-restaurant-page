@@ -2,6 +2,7 @@ import { createChildElement } from "./utility/utility";
 import homepage from "./homepage/homepage";
 import menuPage from "./menu-page/menu-page";
 import contactPage from "./contact-page/contactPage";
+import "./style.css";
 
 const contentElement = createChildElement("div", document.body);
 contentElement.id = "content";
