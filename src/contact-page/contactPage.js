@@ -7,9 +7,6 @@ const contactPage = document.createElement("div");
 contactPage.id = "contact-page-tab";
 contactPage.dataset.tabName = "Contact";
 
-const contactUsHeading = createChildElement("h3", contactPage);
-contactUsHeading.textContent = "Contact Us";
-
 const contactUsParagraph = createChildElement("p", contactPage);
 contactUsParagraph.textContent =
   "At Culinary Delights, we are always eager to hear from our valued guests. " +
