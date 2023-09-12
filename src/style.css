@@ -7,6 +7,7 @@
 
 html {
   background-color: var(--color-2);
+  font-family: "Lato", sans-serif;
 }
 
 .content {
@@ -19,15 +20,17 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 1rem 2rem;
+  margin: 2rem 1rem;
 }
 
 .content header .heading-container {
-  line-height: 1;
+  line-height: 0.9;
 }
 
 .content header .heading-container h1 {
   margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .content header .heading-container h2 {
@@ -51,6 +54,7 @@ html {
   padding: 1rem 1.5rem;
   transition-property: background-color, color;
   transition: 100ms linear;
+  font-weight: 700;
 }
 
 .content header nav button:hover {

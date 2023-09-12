@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -7,6 +8,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Restaurant Page",
+    }),
+    new GoogleFontsPlugin({
+      fonts: [
+        {
+          family: "Lato",
+          variants: ["300", "300italic", "400", "400italic", "700"],
+        },
+      ],
     }),
   ],
   output: {
