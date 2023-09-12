@@ -1,12 +1,12 @@
 :root {
   --color-1: #362517;
-  --color-2: #e8d4c3;
-  --color-3: #d5b1a0;
+  --color-2: #d5b1a0;
+  --color-3: #e8d4c3;
   --color-4: #ffffff;
 }
 
 html {
-  background-color: var(--color-2);
+  background-color: var(--color-3);
   font-family: "Lato", sans-serif;
 }
 
