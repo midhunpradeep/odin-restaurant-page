@@ -87,3 +87,7 @@ for (const [heading, contents] of menuData) {
   const sectionElement = generateMenuSection(heading, contents);
   menuContainer.appendChild(sectionElement);
 }
+
+const endParagraph = createChildElement("p", menuPage);
+endParagraph.textContent =
+  "We hope you enjoy this small but delightful selection of dishes at Culinary Delights!";
