@@ -9,6 +9,7 @@ homepage.dataset.tabName = "Home";
 
 const image = createChildElement("img", homepage);
 image.src = Image;
+image.classList.add("full-bleed");
 
 const aboutUsHeading = createChildElement("h3", homepage);
 aboutUsHeading.textContent = "About us:";
