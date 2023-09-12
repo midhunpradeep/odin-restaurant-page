@@ -17,12 +17,10 @@ const tabNavBar = createChildElement("nav", contentElement);
 const tabNavList = createChildElement("ul", tabNavBar);
 
 function createTabListItemElement(tabElement) {
-  // TODO replace manual display: none with CSS file
   const listElement = document.createElement("li");
   const button = createChildElement("button", listElement);
   button.type = "button";
   button.textContent = tabElement.dataset.tabName;
-  tabElement.style.display = "none";
 
   button.addEventListener("click", () => {
     switchActiveTab(tabElement);
@@ -34,11 +32,9 @@ function createTabListItemElement(tabElement) {
 function switchActiveTab(newActiveTab) {
   for (const activeTab of document.querySelectorAll("[data-active-tab]")) {
     delete activeTab.dataset.activeTab;
-    activeTab.style.display = "none";
   }
 
   newActiveTab.dataset.activeTab = "";
-  newActiveTab.style.display = "";
   console.log(newActiveTab);
 }
 

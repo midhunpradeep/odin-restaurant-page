@@ -1,0 +1,7 @@
+[data-tab-name] {
+  display: none;
+}
+
+[data-tab-name][data-active-tab] {
+  display: revert;
+}
