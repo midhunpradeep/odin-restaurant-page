@@ -8,9 +8,6 @@ const menuPage = document.createElement("div");
 menuPage.id = "menu-page-tag";
 menuPage.dataset.tabName = "Menu";
 
-const aboutMenuHeading = createChildElement("h3", menuPage);
-aboutMenuHeading.textContent = "Our menu:";
-
 const aboutMenuParagraph = createChildElement("p", menuPage);
 aboutMenuParagraph.textContent =
   "Explore our diverse menu, thoughtfully curated to cater to every palate." +
