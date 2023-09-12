@@ -1,8 +1,12 @@
+import homepage from "../homepage/homepage";
+
 export { menuPage as default };
 
 import { createChildElement } from "../utility/utility";
 
 const menuPage = document.createElement("div");
+menuPage.id = "menu-page-tag";
+menuPage.dataset.tabName = "Menu";
 
 const aboutMenuHeading = createChildElement("h3", menuPage);
 aboutMenuHeading.textContent = "Our menu:";

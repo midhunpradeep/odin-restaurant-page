@@ -4,6 +4,8 @@ import { createChildElement } from "../utility/utility";
 import Image from "./patrick-tomasso-GXXYkSwndP4-unsplash.jpg";
 
 const homepage = document.createElement("div");
+homepage.id = "homepage-tab";
+homepage.dataset.tabName = "Home";
 
 const image = createChildElement("img", homepage);
 image.src = Image;

@@ -1,8 +1,11 @@
 import { createChildElement } from "../utility/utility";
+import homepage from "../homepage/homepage";
 
 export { contactPage as default };
 
 const contactPage = document.createElement("div");
+contactPage.id = "contact-page-tab";
+contactPage.dataset.tabName = "Contact";
 
 const contactUsHeading = createChildElement("h3", contactPage);
 contactUsHeading.textContent = "Contact Us";
