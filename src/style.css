@@ -19,7 +19,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem 2rem;
+  margin: 1rem 1rem 2rem;
 }
 
 .content header .heading-container {
@@ -66,6 +66,8 @@ html {
 [data-tab-name][data-active-tab] {
   display: grid;
   grid-template-columns: 1fr min(65ch, 100%) 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 [data-tab-name][data-active-tab] > * {
@@ -75,4 +77,21 @@ html {
 [data-tab-name][data-active-tab] > .full-bleed {
   grid-column: 1 / -1;
   width: 100%;
+}
+
+[data-tab-name][data-active-tab] a {
+  text-decoration: none;
+  color: inherit;
+  font-style: italic;
+}
+
+[data-tab-name][data-active-tab] a:hover {
+  text-decoration: underline;
+  color: inherit;
+  font-style: italic;
+}
+
+figure > img + figcaption {
+  text-align: right;
+  font-size: 0.8rem;
 }
